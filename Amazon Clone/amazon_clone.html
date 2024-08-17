@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com. Spend less. Smile more.</title>
+    <link rel="icon" href="picture/amazon-title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="amazon_clone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar" id="top-part">
+            <div class="nav-left">
+                <div class="nav-logo border">
+                    <div class="logo"></div>
+                </div>
+                <div class="nav-address border">
+                    <p id="address-line_1">Deliver to</p>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p id="address-line_2">Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <select name="search-dropdown" id="search-dropdown">
+                    <option value="all department">All Department</option>
+                    <option value="arts & crafts">Arts & Crafts</option>
+                    <option value="automobile">Automobile</option>
+                    <option value="baby">Baby</option>
+                    <option value="beauty & personal care">Beauty & Personal Care</option>
+                    <option value="books">Books</option>
+                    <option value="boy's fashion">Boy's Fashion</option>
+                    <option value="computer">Computer</option>
+                    <option value="deals">Deals</option>
+                    <option value="digital music">Digital Music</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="girl's fashion">Girl's Fashion</option>
+                    <option value="health & household">Health & Household</option>
+                    <option value="home & kitchen">Home & Kitchen</option>
+                    <option value="industrial & scientific">Industrial & Scientific</option>
+                    <option value="kindle store">Kindle Store</option>
+                    <option value="luggage">Luggage</option>
+                    <option value="men's fashion">Men's Fashion</option>
+                    <option value="movies & tv">Movies & TV</option>
+                    <option value="music, cds & vinyl">Music, CDs & Vinyl</option>
+                    <option value="pet supplies">Pet Supplies</option>
+                    <option value="prime video">Prime Video</option>
+                    <option value="software">Software</option>
+                    <option value="sports & outdoors">Sports & Outdoors</option>
+                    <option value="tools & home improvement">Tools & Home Improvement</option>
+                    <option value="toys & games">Toys & Games</option>
+                    <option value="video games">Video Games</option>
+                    <option value="women's fashion">Women's Fashion</option>
+                </select>
+                <input placeholder="Search Amazon" id="nav-search_bar">
+                <div class="nav-search-icon">
+                    <a id="search-link" href="http://127.0.0.1:5501/amazon_clone.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-language-section border">
+                    <div class="language-flag-logo"><div id="language-flag"></div></div>
+                    <p id="language">EN</p>
+                    <div class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></div>
+                </div>
+                <div class="nav-sign-in border">
+                    <p id="welcome-message">Hello, sign in</p>
+                    <div class="account-list">
+                        <p id="accounts">Account & Lists</p>
+                        <i class="fa-solid fa-caret-down dropdown-icon"></i>
+                    </div>
+                </div>
+                <div class="return-order-product border">
+                    <p id="return-product">Returns</p>
+                    <p id="order-product">& Orders</p>
+                </div>
+                <div class="add-cart border">
+                    <div class="cart-icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                    <p id="cart-here">Cart</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-navbar">
+            <div class="all-options border">
+                <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
+                <a id="webpage-option" href="http://127.0.0.1:5501/amazon_clone.html">All</a>
+            </div>
+            <div class="common-options">
+                <a class="border" id="first-option" href="http://127.0.0.1:5501/amazon_clone.html">Today's Deals</a>
+                <a class="border" id="second-option" href="http://127.0.0.1:5501/amazon_clone.html">Customer Service</a>
+                <a class="border" id="third-option" href="http://127.0.0.1:5501/amazon_clone.html">Registry</a>
+                <a class="border" id="fourth-option" href="http://127.0.0.1:5501/amazon_clone.html">Gift Cards</a>
+                <a class="border" id="fifth-option" href="http://127.0.0.1:5501/amazon_clone.html">Sell</a>
+                <!-- <div id="blank_space"></div> -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-container">
+            <div class="image-container">
+                <a class="image-slide" id="first-pic" href="http://127.0.0.1:5501/amazon_clone.html"></a>
+                <a class="image-slide" id="second-pic" href="http://127.0.0.1:5501/amazon_clone.html"></a>
+                <a class="image-slide" id="third-pic" href="http://127.0.0.1:5501/amazon_clone.html"></a>
+                <a class="image-slide" id="fourth-pic" href="http://127.0.0.1:5501/amazon_clone.html"></a>
+                <a class="image-slide" id="fifth-pic" href="http://127.0.0.1:5501/amazon_clone.html"></a>
+                <a class="image-slide" id="sixth-pic" href="http://127.0.0.1:5501/amazon_clone.html"></a>
+            </div>
+            <div class="tag-button">
+                <button id="left-slide"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="right-slide"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="opacity-control"></div>
+        </section>
+        <section class="product">
+            <div class="first-row individual">
+                <div class="box-1 common-property">
+                    <h2 class="product-description">Gaming accessories</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-1-box-1">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-1-box-1-image-caption">Headsets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-1-box-1">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-1-box-1-image-caption">Keyboards</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-1-box-1">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-1-box-1-image-caption">Computer mice</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-1-box-1">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-1-box-1-image-caption">Chairs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See more</a>
+                </div>
+                <div class="box-2 common-property">
+                    <h2 class="product-description">Shop deals in Fashion</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-1-box-2">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-1-box-2-image-caption">Jeans Under $50</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-1-box-2">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-1-box-2-image-caption">Tops under $25</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-1-box-2">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-1-box-2-image-caption">Dresses under $30</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-1-box-2">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-1-box-2-image-caption">Shoes under $50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See all details</a>
+                </div>
+                <div class="box-3 common-property">
+                    <h2 class="product-description">Refresh your space</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-1-box-3">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-1-box-3-image-caption">Dining</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-1-box-3">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-1-box-3-image-caption">Home</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-1-box-3">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-1-box-3-image-caption">Kitchen</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-1-box-3">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-1-box-3-image-caption">Health and Beauty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See more</a>
+                </div>
+                <div class="box-4 common-property">
+                    <h2 class="product-description">Deals in PCs</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-1-box-4-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop now</a>
+                </div>
+            </div>
+            <div class="second-row individual">
+                <div class="box-1 common-property">
+                    <h2 class="product-description">Toys under $25</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-2-box-1-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop now</a>
+                </div>
+                <div class="box-2 common-property">
+                    <h2 class="product-description">Fashion trends you</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-2-box-2">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-2-box-2-image-caption">Dresses</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-2-box-2">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-2-box-2-image-caption">Knits</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-2-box-2">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-2-box-2-image-caption">Jackets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-2-box-2">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-2-box-2-image-caption">Jewelry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Explore more</a>
+                </div>
+                <div class="box-3 common-property">
+                    <h2 class="product-description">Beauty steals under $25</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-2-box-3-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop now</a>
+                </div>
+                <div class="box-4 common-property">
+                    <h2 class="product-description">Home décor under $50</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-2-box-4-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop now</a>
+                </div>
+            </div>
+            <div class="sixth-row single">
+                <div class="single-box general-property">
+                    <h2 class="product-description-single-row">Best Sellers in Toys & Games</h2>
+                    <div class="all-product-image">
+                        <div class="only-container-row" id="product-1-row-6"></div>
+                        <div class="only-container-row" id="product-2-row-6"></div>
+                        <div class="only-container-row" id="product-3-row-6"></div>
+                        <div class="only-container-row" id="product-4-row-6"></div>
+                        <div class="only-container-row" id="product-5-row-6"></div>
+                        <div class="only-container-row" id="product-6-row-6"></div>
+                        <div class="only-container-row" id="product-7-row-6"></div>
+                        <div class="only-container-row" id="product-8-row-6"></div>
+                        <div class="only-container-row" id="product-9-row-6"></div>
+                        <div class="only-container-row" id="product-10-row-6"></div>
+                        <div class="only-container-row" id="product-11-row-6"></div>
+                        <div class="only-container-row" id="product-12-row-6"></div>
+                        <div class="only-container-row" id="product-13-row-6"></div>
+                        <div class="only-container-row" id="product-14-row-6"></div>
+                        <div class="only-container-row" id="product-15-row-6"></div>
+                        <div class="only-container-row" id="product-16-row-6"></div>
+                        <div class="only-container-row" id="product-17-row-6"></div>
+                        <div class="only-container-row" id="product-18-row-6"></div>
+                        <div class="only-container-row" id="product-19-row-6"></div>
+                        <div class="only-container-row" id="product-20-row-6"></div>
+                        <div class="only-container-row" id="product-21-row-6"></div>
+                        <div class="only-container-row" id="product-22-row-6"></div>
+                        <div class="only-container-row" id="product-23-row-6"></div>
+                        <div class="only-container-row" id="product-24-row-6"></div>
+                        <div class="only-container-row" id="product-25-row-6"></div>
+                        <div class="only-container-row" id="product-26-row-6"></div>
+                    </div>
+                    <div class="tag-button-row">
+                        <button id="left-slide-row"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="right-slide-row"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="seventh-row single">
+                <div class="single-box general-property">
+                    <h2 class="product-description-single-row">Top Sellers in Baby Products for you</h2>
+                    <div class="all-product-image">
+                        <div class="only-container-row" id="product-1-row-7"></div>
+                        <div class="only-container-row" id="product-2-row-7"></div>
+                        <div class="only-container-row" id="product-3-row-7"></div>
+                        <div class="only-container-row" id="product-4-row-7"></div>
+                        <div class="only-container-row" id="product-5-row-7"></div>
+                        <div class="only-container-row" id="product-6-row-7"></div>
+                        <div class="only-container-row" id="product-7-row-7"></div>
+                        <div class="only-container-row" id="product-8-row-7"></div>
+                        <div class="only-container-row" id="product-9-row-7"></div>
+                        <div class="only-container-row" id="product-10-row-7"></div>
+                        <div class="only-container-row" id="product-11-row-7"></div>
+                        <div class="only-container-row" id="product-12-row-7"></div>
+                        <div class="only-container-row" id="product-13-row-7"></div>
+                        <div class="only-container-row" id="product-14-row-7"></div>
+                        <div class="only-container-row" id="product-15-row-7"></div>
+                        <div class="only-container-row" id="product-16-row-7"></div>
+                        <div class="only-container-row" id="product-17-row-7"></div>
+                        <div class="only-container-row" id="product-18-row-7"></div>
+                        <div class="only-container-row" id="product-19-row-7"></div>
+                        <div class="only-container-row" id="product-20-row-7"></div>
+                        <div class="only-container-row" id="product-21-row-7"></div>
+                        <div class="only-container-row" id="product-22-row-7"></div>
+                        <div class="only-container-row" id="product-23-row-7"></div>
+                        <div class="only-container-row" id="product-24-row-7"></div>
+                        <div class="only-container-row" id="product-25-row-7"></div>
+                    </div>
+                    <div class="tag-button-row">
+                        <button id="left-slide-row"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="right-slide-row"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="third-row individual">
+                <div class="box-1 common-property">
+                    <h2 class="product-description">Gaming merchandise</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-3-box-1">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-3-box-1-image-caption">Headsets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-3-box-1">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-3-box-1-image-caption">Keyboards</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-3-box-1">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-3-box-1-image-caption">Computer mice</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-3-box-1">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-3-box-1-image-caption">Chairs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See more</a>
+                </div>
+                <div class="box-2 common-property">
+                    <h2 class="product-description-big">Shop activity trackers and smartwatches</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-3-box-2-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop now</a>
+                </div>
+                <div class="box-3 common-property">
+                    <h2 class="product-description">Warm & welcoming decor</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-3-box-3">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-3-box-3-image-caption">Headsets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-3-box-3">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-3-box-3-image-caption">Keyboards</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-3-box-3">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-3-box-3-image-caption">Computer mice</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-3-box-3">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-3-box-3-image-caption">Chairs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop more fall finds</a>
+                </div>
+                <div class="box-4 common-property">
+                    <h2 class="product-description">Great prices on shoes</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-3-box-4-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See more</a>
+                </div>
+            </div>
+            <div class="eighth-row single">
+                <div class="single-box general-property">
+                    <h2 class="product-description-single-row">Best Sellers in Sports & Outdoors</h2>
+                    <div class="all-product-image">
+                        <div class="only-container-row" id="product-1-row-8"></div>
+                        <div class="only-container-row" id="product-2-row-8"></div>
+                        <div class="only-container-row" id="product-3-row-8"></div>
+                        <div class="only-container-row" id="product-4-row-8"></div>
+                        <div class="only-container-row" id="product-5-row-8"></div>
+                        <div class="only-container-row" id="product-6-row-8"></div>
+                        <div class="only-container-row" id="product-7-row-8"></div>
+                        <div class="only-container-row" id="product-8-row-8"></div>
+                        <div class="only-container-row" id="product-9-row-8"></div>
+                        <div class="only-container-row" id="product-10-row-8"></div>
+                        <div class="only-container-row" id="product-11-row-8"></div>
+                        <div class="only-container-row" id="product-12-row-8"></div>
+                        <div class="only-container-row" id="product-13-row-8"></div>
+                        <div class="only-container-row" id="product-14-row-8"></div>
+                        <div class="only-container-row" id="product-15-row-8"></div>
+                        <div class="only-container-row" id="product-16-row-8"></div>
+                        <div class="only-container-row" id="product-17-row-8"></div>
+                        <div class="only-container-row" id="product-18-row-8"></div>
+                        <div class="only-container-row" id="product-19-row-8"></div>
+                        <div class="only-container-row" id="product-20-row-8"></div>
+                    </div>
+                    <div class="tag-button-row">
+                        <button id="left-slide-row"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="right-slide-row"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="ninth-row single">
+                <div class="single-box general-property">
+                    <h2 class="product-description-single-row">Most wished for in Movies & TVs</h2>
+                    <div class="all-product-image">
+                        <div class="only-container-row" id="product-1-row-9"></div>
+                        <div class="only-container-row" id="product-2-row-9"></div>
+                        <div class="only-container-row" id="product-3-row-9"></div>
+                        <div class="only-container-row" id="product-4-row-9"></div>
+                        <div class="only-container-row" id="product-5-row-9"></div>
+                        <div class="only-container-row" id="product-6-row-9"></div>
+                        <div class="only-container-row" id="product-7-row-9"></div>
+                        <div class="only-container-row" id="product-8-row-9"></div>
+                        <div class="only-container-row" id="product-9-row-9"></div>
+                        <div class="only-container-row" id="product-10-row-9"></div>
+                        <div class="only-container-row" id="product-11-row-9"></div>
+                        <div class="only-container-row" id="product-12-row-9"></div>
+                        <div class="only-container-row" id="product-13-row-9"></div>
+                        <div class="only-container-row" id="product-14-row-9"></div>
+                        <div class="only-container-row" id="product-15-row-9"></div>
+                        <div class="only-container-row" id="product-16-row-9"></div>
+                        <div class="only-container-row" id="product-17-row-9"></div>
+                        <div class="only-container-row" id="product-18-row-9"></div>
+                        <div class="only-container-row" id="product-19-row-9"></div>
+                        <div class="only-container-row" id="product-20-row-9"></div>
+                        <div class="only-container-row" id="product-21-row-9"></div>
+                        <div class="only-container-row" id="product-22-row-9"></div>
+                        <div class="only-container-row" id="product-23-row-9"></div>
+                        <div class="only-container-row" id="product-24-row-9"></div>
+                        <div class="only-container-row" id="product-25-row-9"></div>
+                        <div class="only-container-row" id="product-26-row-9"></div>
+                        <div class="only-container-row" id="product-27-row-9"></div>
+                        <div class="only-container-row" id="product-28-row-9"></div>
+                        <div class="only-container-row" id="product-29-row-9"></div>
+                    </div>
+                    <div class="tag-button-row">
+                        <button id="left-slide-row"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="right-slide-row"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-row individual">
+                <div class="box-1 common-property">
+                    <h2 class="product-description">Level up your gaming</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-4-box-1">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-4-box-1-image-caption">Headsets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-4-box-1">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-4-box-1-image-caption">Keyboards</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-4-box-1">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-4-box-1-image-caption">Computer mice</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-4-box-1">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-4-box-1-image-caption">Chairs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop the latest in gaming</a>
+                </div>
+                <div class="box-2 common-property">
+                    <h2 class="product-description">Have more fun with family</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-4-box-2">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-4-box-2-image-caption">Headsets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-4-box-2">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-4-box-2-image-caption">Keyboards</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-4-box-2">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-4-box-2-image-caption">Computer mice</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-4-box-2">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-4-box-2-image-caption">Chairs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See more</a>
+                </div>
+                <div class="box-3 common-property">
+                    <h2 class="product-description">Look your best this season</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-4-box-3">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-4-box-3-image-caption">Headsets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-4-box-3">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-4-box-3-image-caption">Keyboards</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-4-box-3">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-4-box-3-image-caption">Computer mice</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-4-box-3">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-4-box-3-image-caption">Chairs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See more</a>
+                </div>
+                <div class="box-4 common-property">
+                    <h2 class="product-description">Fantastic Finds for Home</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-4-box-4">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-4-box-4-image-caption">Headsets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-4-box-4">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-4-box-4-image-caption">Keyboards</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-4-box-4">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-4-box-4-image-caption">Computer mice</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-4-box-4">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-4-box-4-image-caption">Chairs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See more</a>
+                </div>
+            </div>
+            <div class="tenth-row single">
+                <div class="single-box general-property">
+                    <h2 class="product-description-single-row">Best Sellers in Kitchen & Dining</h2>
+                    <div class="all-product-image">
+                        <div class="only-container-row" id="product-1-row-10"></div>
+                        <div class="only-container-row" id="product-2-row-10"></div>
+                        <div class="only-container-row" id="product-3-row-10"></div>
+                        <div class="only-container-row" id="product-4-row-10"></div>
+                        <div class="only-container-row" id="product-5-row-10"></div>
+                        <div class="only-container-row" id="product-6-row-10"></div>
+                        <div class="only-container-row" id="product-7-row-10"></div>
+                        <div class="only-container-row" id="product-8-row-10"></div>
+                        <div class="only-container-row" id="product-9-row-10"></div>
+                        <div class="only-container-row" id="product-10-row-10"></div>
+                        <div class="only-container-row" id="product-11-row-10"></div>
+                        <div class="only-container-row" id="product-12-row-10"></div>
+                    </div>
+                    <div class="tag-button-row">
+                        <button id="left-slide-row"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="right-slide-row"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="eleventh-row single">
+                <div class="single-box general-property">
+                    <h2 class="product-description-single-row">Popular products in PC internationally</h2>
+                    <div class="all-product-image">
+                        <div class="only-container-row" id="product-1-row-11"></div>
+                        <div class="only-container-row" id="product-2-row-11"></div>
+                        <div class="only-container-row" id="product-3-row-11"></div>
+                        <div class="only-container-row" id="product-4-row-11"></div>
+                        <div class="only-container-row" id="product-5-row-11"></div>
+                        <div class="only-container-row" id="product-6-row-11"></div>
+                        <div class="only-container-row" id="product-7-row-11"></div>
+                        <div class="only-container-row" id="product-8-row-11"></div>
+                        <div class="only-container-row" id="product-9-row-11"></div>
+                        <div class="only-container-row" id="product-10-row-11"></div>
+                        <div class="only-container-row" id="product-11-row-11"></div>
+                        <div class="only-container-row" id="product-12-row-11"></div>
+                        <div class="only-container-row" id="product-13-row-11"></div>
+                        <div class="only-container-row" id="product-14-row-11"></div>
+                        <div class="only-container-row" id="product-15-row-11"></div>
+                        <div class="only-container-row" id="product-16-row-11"></div>
+                        <div class="only-container-row" id="product-17-row-11"></div>
+                        <div class="only-container-row" id="product-18-row-11"></div>
+                        <div class="only-container-row" id="product-19-row-11"></div>
+                        <div class="only-container-row" id="product-20-row-11"></div>
+                        <div class="only-container-row" id="product-21-row-11"></div>
+                        <div class="only-container-row" id="product-22-row-11"></div>
+                        <div class="only-container-row" id="product-23-row-11"></div>
+                        <div class="only-container-row" id="product-24-row-11"></div>
+                        <div class="only-container-row" id="product-25-row-11"></div>
+                        <div class="only-container-row" id="product-26-row-11"></div>
+                        <div class="only-container-row" id="product-27-row-11"></div>
+                        <div class="only-container-row" id="product-28-row-11"></div>
+                        <div class="only-container-row" id="product-29-row-11"></div>
+                        <div class="only-container-row" id="product-30-row-11"></div>
+                    </div>
+                    <div class="tag-button-row">
+                        <button id="left-slide-row"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="right-slide-row"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="fifth-row individual">
+                <div class="box-1 common-property">
+                    <h2 class="product-description">Player's paradise starts here</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-5-box-1-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop video games</a>
+                </div>
+                <div class="box-2 common-property">
+                    <h2 class="product-description">A whole new way to work</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-5-box-2-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop personal computers</a>
+                </div>
+                <div class="box-3 common-property">
+                    <h2 class="product-description">Upgrade your office furniture</h2>
+                    <div class="image-box">
+                        <div class="only-container">
+                            <div class="row-5-box-3-image"></div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop now</a>
+                </div>
+                <div class="box-4 common-property">
+                    <h2 class="product-description-big">Score the top PCs & &nbsp;&nbsp;&nbsp; Accessories</h2>
+                    <div class="image-box">
+                        <div class="first-container">
+                            <div class="image-with-caption">
+                                <div class="row-5-box-4">
+                                    <div class="image1"></div>
+                                </div>
+                                <p class="row-5-box-4-image-caption">Headsets</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-5-box-4">
+                                    <div class="image2"></div>
+                                </div>
+                                <p class="row-5-box-4-image-caption">Keyboards</p>
+                            </div>
+                        </div>
+                        <div class="second-container">
+                            <div class="image-with-caption">
+                                <div class="row-5-box-4">
+                                    <div class="image3"></div>
+                                </div>
+                                <p class="row-5-box-4-image-caption">Computer mice</p>
+                            </div>
+                            <div class="image-with-caption">
+                                <div class="row-5-box-4">
+                                    <div class="image4"></div>
+                                </div>
+                                <p class="row-5-box-4-image-caption">Chairs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="similiar-product-link" href="http://127.0.0.1:5501/amazon_clone.html">See more</a>
+                </div>
+            </div>
+            <div class="twelfth-row single">
+                <div class="single-box general-property">
+                    <h2 class="product-description-single-row">Best Sellers in Beauty & Personal Care</h2>
+                    <div class="all-product-image">
+                        <div class="only-container-row" id="product-1-row-12"></div>
+                        <div class="only-container-row" id="product-2-row-12"></div>
+                        <div class="only-container-row" id="product-3-row-12"></div>
+                        <div class="only-container-row" id="product-4-row-12"></div>
+                        <div class="only-container-row" id="product-5-row-12"></div>
+                        <div class="only-container-row" id="product-6-row-12"></div>
+                        <div class="only-container-row" id="product-7-row-12"></div>
+                        <div class="only-container-row" id="product-8-row-12"></div>
+                        <div class="only-container-row" id="product-9-row-12"></div>
+                        <div class="only-container-row" id="product-10-row-12"></div>
+                        <div class="only-container-row" id="product-11-row-12"></div>
+                        <div class="only-container-row" id="product-12-row-12"></div>
+                        <div class="only-container-row" id="product-13-row-12"></div>
+                        <div class="only-container-row" id="product-14-row-12"></div>
+                    </div>
+                    <div class="tag-button-row">
+                        <button id="left-slide-row"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="right-slide-row"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sign-in">
+            <div class="outer-design">
+                <div class="inner-design">
+                    <p class="sign-in-description">See personalized recommendations</p>
+                    <button class="sign-in-button">Sign In</button>
+                    <p class="sign-in-query">New customer? <a id="sign-in-register" href="http://127.0.0.1:5501/amazon_clone.html">Start here.</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-start-panel">
+            <a href="#top-part">Back to top</a>
+        </section>
+        <section class="footer-middle-panel">
+            <div class="middle-upper">
+                <div class="all-link-columns">
+                    <div class="first-link-column">
+                        <p class="link-heading">Get to Know Us</p>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Careers</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Blog</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">About Amazon</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Investor Relations</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Amazon Devices</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Amazon Science</a>
+                    </div>
+                    <div class="space-column"></div>
+                    <div class="second-link-column">
+                        <p class="link-heading">Make Money with Us</p>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Sell products on Amazon</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Sell on Amazon Business</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Sell apps on Amazon</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Become an Affiliate</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Advertise Your Products</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Self-Publish with Us</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Host an Amazon Hub</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">&rsaquo; See More Make Money with Us</a>
+                    </div>
+                    <div class="space-column"></div>
+                    <div class="third-link-column">
+                        <p class="link-heading">Amazon Payment Products</p>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Amazon Business Card</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Shop with Points</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Reload Your Balance</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Amazon Currency Converter</a>
+                    </div>
+                    <div class="space-column"></div>
+                    <div class="fourth-link-column">
+                        <p class="link-heading">Let Us Help You</p>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Amazon and COVID-19</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Your Account</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Your Orders</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Shipping Rates & Policies</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Returns & Replacements</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Manage Your Content and Devices</a>
+                        <a id="other-page-link" href="http://127.0.0.1:5501/amazon_clone.html">Help</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-lower">
+                <div class="img-and-button">
+                    <div class="img-part">
+                        <a id="img-part-cover-photo" href="http://127.0.0.1:5501/amazon_clone.html"></a>
+                    </div>
+                    <div class="footer-button-part">
+                        <button class="footer-button-design">
+                            <i class="fa-solid fa-globe"></i> 
+                            <p class="button-solid-text">English</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <button class="footer-button-design-extra">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <p class="button-solid-text">USD - U.S. Dollar</p>
+                        </button>
+                        <button class="footer-button-design">
+                            <div class="country-flag" id="country-flag-photo"></div>
+                            <p class="button-solid-text">United States</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-end-panel">
+            <div class="end-link-part">
+                <div class="all-link-columns">
+                <div class="end-link-first-column">
+                    <a class="first-column-first-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Amazon Music</span><br>Stream milloins of songs</a>
+                    <a class="first-column-second-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>AmazonGlobal</span><br>Ship Orders Internationally</a>
+                    <a class="first-column-third-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>IMDbPro</span><br>Get into Entertainment Professionals Need</a>
+                    <a class="first-column-fourth-link same-common-design" href=""></a>
+                </div>
+                <div class="end-link-space-column"></div>
+                <div class="end-link-second-column">
+                    <a class="second-column-first-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Amazon Ads</span><br>Reach customers wherever they spend their time</a>
+                    <a class="second-column-second-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Home Services</span><br>Experienced Pros Happiness Guarantee</a>
+                    <a class="second-column-third-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Kindle Direct Publishing</span><br>Indie Digital & Print Publishing Made Easy</a>
+                    <a class="second-column-fourth-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>eero WiFi</span><br>Stream 4K Video in Every Room</a>
+                </div>
+                <div class="end-link-space-column"></div>
+                <div class="end-link-third-column">
+                    <a class="third-column-first-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>6pm</span><br>Store deals on fashion brands</a>
+                    <a class="third-column-second-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Amazon Web Services</span><br>Scalable Cloud Computing Services</a>
+                    <a class="third-column-third-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Prime Video Direct</span><br>Video Distribution Made Easy</a>
+                    <a class="third-column-fourth-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Blink</span><br>Smart Security for Every Home</a>
+                </div>
+                <div class="end-link-space-column"></div>
+                <div class="end-link-fourth-column">
+                    <a class="fourth-column-first-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>AbeBooks</span><br>Books, art & collectibles</a>
+                    <a class="fourth-column-second-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Audible</span><br>Listen to Books & Original Audio Performances</a>
+                    <a class="fourth-column-third-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Shopbop</span><br>Designer Fashion Brands</a>
+                    <a class="fourth-column-fourth-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Neighbors App</span><br>Real-Time Crime & Safety Alerts</a>
+                </div>
+                <div class="end-link-space-column"></div>
+                <div class="end-link-fifth-column">
+                    <a class="fifth-column-first-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>ACX</span><br>Audiobook Publishing Made Easy</a>
+                    <a class="fifth-column-second-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Box Office Mojo</span><br>Find Movie Box Office Data</a>
+                    <a class="fifth-column-third-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Woot!</span><br>Deals and Shenanigans</a>
+                    <a class="fifth-column-fourth-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Amazon Subscription Boxes</span><br>Top subscription boxes -right to your door</a>
+                </div>
+                <div class="end-link-space-column"></div>
+                <div class="end-link-sixth-column">
+                    <a class="sixth-column-first-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Sell on Amazon</span><br>Start a Selling Account</a>
+                    <a class="sixth-column-second-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Goodreads</span><br>Book reviews & recommendations</a>
+                    <a class="sixth-column-third-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Zappos</span><br>Shoes & Clothing</a>
+                    <a class="sixth-column-fourth-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>PillPack</span><br>Pharmacy Simplified</a>
+                </div>
+                <div class="end-link-space-column"></div>
+                <div class="end-link-seventh-column">
+                    <a class="seventh-column-first-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Amazon Business</span><br>Everything For Your Business</a>
+                    <a class="seventh-column-second-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>IMDb</span><br>Movies, TV & Celebrities</a>
+                    <a class="seventh-column-third-link same-common-design" href="http://127.0.0.1:5501/amazon_clone.html"><span>Ring</span><br>Smart Home Security Systems</a>
+                    <a class="seventh-column-fourth-link same-common-design" href=""></a>
+                </div>
+                </div>
+            </div>
+            <div class="end-last-part">
+                <div class="last-part-container">
+                    <div class="container-box-1">
+                        <a clsss="same-design-extra" href="http://127.0.0.1:5501/amazon_clone.html">Conditions of Use</a>
+                        <a clsss="same-design-extra" href="http://127.0.0.1:5501/amazon_clone.html">Privacy Notice</a>
+                        <a clsss="same-design-extra" href="http://127.0.0.1:5501/amazon_clone.html">Consumer Health Data Privacy Disclosure</a>
+                        <a clsss="same-design-extra" href="http://127.0.0.1:5501/amazon_clone.html">Your Ads Privacy Choices</a>
+                    </div>
+                    <div class="container-box-2">
+                        <p class="same-design">&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
