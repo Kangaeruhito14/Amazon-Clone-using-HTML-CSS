@@ -4,7 +4,7 @@ This project is a simplified Amazon clone website, built using HTML and CSS to p
 
 ## 🌟 Features
 
-- **Responsive Layout**: Optimized for mobile, tablet, and desktop views.
+- **Layout**: Optimized for only desktop views.
 - **Navigation Bar**: Top navigation for easy access to various sections.
 - **Product Display**: Styled product cards, emulating an Amazon-like interface.
 - **Footer Section**: Contains links and additional information.
@@ -32,4 +32,4 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Amazon-Clone-using-HTML-CSS.git
+   git clone https://github.com/Kangaeruhito14/Amazon-Clone-using-HTML-CSS
